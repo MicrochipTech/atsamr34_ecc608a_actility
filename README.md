@@ -60,6 +60,7 @@ Until the next Atmel Studio IDE release, you have to manually install the Device
 **1, 3 and 7 must be placed to ON position**
 </br>
 ![](Doc/DIP_Switch.png)
+![](Doc/Gateways_ThingPark_Market.png)
 </br>
 
 - Open the socket board
