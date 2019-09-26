@@ -99,21 +99,21 @@ The USB ports powers the board and enables the user to communicate with the kits
 
 ## Sample Application Code <a name="step4"></a>
 
-- Open the "APPS_ENDDEVICE_DEMO" project with Atmel Studio 7 IDE
-- From the top menu, go to Project -> APPS_ENDDEVICE_DEMO Properties
-- From Tool settings, select your board as EDBG debugger with SWD interface
+Open the "APPS_ENDDEVICE_DEMO" project with Atmel Studio 7 IDE</br>
+From the top menu, go to Project -> APPS_ENDDEVICE_DEMO Properties</br>
+From Tool settings, select your board as EDBG debugger with SWD interface
 </br>
 ![](Doc/EDBG.png)
 </br>
-- Build and download the project by clicking the empty green "Run without debugging" triangle
+Build and download the project by clicking the empty green "Run without debugging" triangle
 </br>
 ![](Doc/AtmelStudio.png)
 </br>
-- Open the Tera Term UART console previously configured at 115200 bps, 8-data bits/No parity/1-stop bit
+Open the Tera Term UART console previously configured at 115200 bps, 8-data bits/No parity/1-stop bit
 </br>
-- Press the "Reset" button on the SAM R34 Xplained Pro board to see output printed to the console
+Press the "Reset" button on the SAM R34 Xplained Pro board to see output printed to the console
 </br>
-- Observe the following identifiers coming from the ATECC608A Secure Element
+Observe the following identifiers coming from the ATECC608A Secure Element
 </br>
 ![](Doc/UART_Console1.png)
 </br>
