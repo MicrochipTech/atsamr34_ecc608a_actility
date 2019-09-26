@@ -150,5 +150,13 @@ Select the band where your device is operating
 </br>
 Then, the end device application transmits a Join Request message. If a Join Accept message was received and validated, the SAM R34 Xplained Pro board will be joined to the Join Server.
 </br>
+![](Doc/UART_Console4.png)
+</br>
 Press "2" to send a packet consisting of a temperature sensor reading
+</br>
+![](Doc/UART_Console5.png)
+</br>
+Connect to ThingPark Wireless Logger to monitor the activity of your device
+</br>
+![](Doc/WirelessLogger.png)
 </br>
