@@ -62,30 +62,30 @@ Configure the DIP switch of the CryptoAuthenticationUDFN Socket kit for I2C comm
 ![](Doc/DIP_Switch.png)
 </br>
 
-- Open the socket board
+Open the socket board
 </br>
 ![](Doc/OpenSocketBoard.png)
 </br>
 
-- Make sure the ATECC608A device is ready to be inserted in the right direction.
+Make sure the ATECC608A device is ready to be inserted in the right direction.
 Make sure the pin 1 of the component (represented by a point) is located at the bottom left.
 </br>
 ![](Doc/SecureElement.png)
 </br>
 
-- Place the Secure Element in the UDFN socket
+Place the Secure Element in the UDFN socket
 </br>
 ![](Doc/SecureElementPlacement.png)
 </br>
 
-- Make sure the Secure Element is properly seated and the pin 1 is located at the bottom left.
+Make sure the Secure Element is properly seated and the pin 1 is located at the bottom left.
 </br>
 ![](Doc/SecureElementPlaced.png)
 </br>
-- Close the clam shell lid.
+Close the clam shell lid.
 </br>
 
-- Attach the CryptoAuthenticationUDFN Socket kit to the SAM R34 Xplained Pro board on the **EXT3 header.**
+Attach the CryptoAuthenticationUDFN Socket kit to the SAM R34 Xplained Pro board on the **EXT3 header.**
 </br>
 Plug the antenna.
 Attach a USB cable to SAM R34 Xplained Pro board's EDBG micro-B port on the right.</br>
@@ -138,17 +138,17 @@ This guide will direct you through the process of getting started with developin
 
 ## Running the demo <a name="step6"></a>
 
-- Go back to the Tera Term UART console
+Go back to the Tera Term UART console
 </br>
 ![](Doc/UART_Console2.png)
 </br>
-- Press "1" to start the Demo Application
+Press "1" to start the Demo Application
 </br>
-- Select the band where your device is operating
+Select the band where your device is operating
 </br>
 ![](Doc/UART_Console3.png)
 </br>
-- Then, the end device application transmits a Join Request message. If a Join Accept message was received and validated, the SAM R34 Xplained Pro board will be joined to the Join Server.
+Then, the end device application transmits a Join Request message. If a Join Accept message was received and validated, the SAM R34 Xplained Pro board will be joined to the Join Server.
 </br>
-- Press "2" to send a packet consisting of a temperature sensor reading
+Press "2" to send a packet consisting of a temperature sensor reading
 </br>
