@@ -121,9 +121,9 @@ Observe the following identifiers coming from the ATECC608A Secure Element
 
 In order to pre-commission a device using ATECC608A secure element in ThingPark Activation, the following idenfiers are required:
 
-DevEUI: LoRaWAN device 64-bit unique identifier assigned by the Device manufacturer (or using Secure Element default value)
-JoinEUI: LoRaWAN JS 64-bit unique identifier of the Join Server on which AppKey of the device is stored
-TKM Info: ATECC608A secure element identifier allowing ThingPark Activation to retrieve secure element AppKey
+- DevEUI: LoRaWAN device 64-bit unique identifier assigned by the Device manufacturer (or using Secure Element default value)
+- JoinEUI: LoRaWAN JS 64-bit unique identifier of the Join Server on which AppKey of the device is stored
+- TKM Info: ATECC608A secure element identifier allowing ThingPark Activation to retrieve secure element AppKey
 
 
 ## Actility ThingPark Activation <a name="step5"></a>
