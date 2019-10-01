@@ -1,5 +1,5 @@
 # ATSAMR34_ECC608A_ACTILITY
-> Develop with the SAM R34 LoRa SiP and Microchip LoRaWAN stack on Actility join servers
+> “Wireless Made Easy!": Develop with the SAM R34 LoRa SiP and Microchip LoRaWAN stack on Actility join server
 
 This guide will direct you through the process of getting started with developing a secure LoRa end device product using Microchip Technology's Pre-provisioned ATECC608A secure element along with Actility Join server.
 
