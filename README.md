@@ -1,7 +1,16 @@
 # ATSAMR34_ECC608A_ACTILITY
-> “Wireless Made Easy!": Develop with the SAM R34 LoRa SiP and Microchip LoRaWAN stack on Actility join server
+> “Wireless Made Easy!" - Develop with the SAM R34 LoRa SiP and Microchip LoRaWAN stack on Actility join server
 
-This guide will direct you through the process of getting started with developing a secure LoRa end device product using Microchip Technology's Pre-provisioned ATECC608A secure element along with Actility Join server.
+<p>
+<a href="https://www.microchip.com/design-centers/security-ics/trust-platform/trust-go/trust-go-lora-secure-authentication-with-join-servers" target="_blank">
+<img border="0" alt="Microchip_logo" src="Doc/Microchip_logo.png" width="150">
+
+<a href="https://www.actility.com" target="_blank">
+<img border="0" alt="Actility_logo" src="Doc/Actility_logo.png" width="200">
+</p>
+</a>
+
+**This guide will direct you through the process of getting started with developing a Secure LoRa End Device product using Microchip Technology's Pre-provisioned ATECC608A secure element along with Actility Join server.**
 
 1. [Material required](#step1)
 2. [Software](#step2)
@@ -57,6 +66,7 @@ Until the next Atmel Studio IDE release, you have to manually install the Device
 ## Hardware setup <a name="step3"></a>
 
 Configure the DIP switch of the CryptoAuthenticationUDFN Socket kit for I2C communication with the host microcontroller.
+</br>
 **1, 3 and 7 must be placed to ON position**
 </br>
 ![](Doc/DIP_Switch.png)
