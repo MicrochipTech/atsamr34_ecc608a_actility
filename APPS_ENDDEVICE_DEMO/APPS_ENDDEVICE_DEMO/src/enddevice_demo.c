@@ -155,6 +155,9 @@ uint8_t bandTable[] =
     0xFF
 };
 
+// m16946 added - current band index
+uint8_t current_band_num ;
+
 /*ABP Join Parameters */
 static uint32_t demoDevAddr = DEMO_DEVICE_ADDRESS;
 static uint8_t demoNwksKey[16] = DEMO_NETWORK_SESSION_KEY;
@@ -395,20 +398,28 @@ static void processJoinAndSend(void)
 	StackRetStatus_t status = LORAWAN_SUCCESS;
 	if(serialBuffer == '1')
 	{
-		status = LORAWAN_Join(DEMO_APP_ACTIVATION_TYPE);
+		// m16946 - added
+		PDS_DeleteAll() ;
+		//LORAWAN_Reset(bandTable[current_band_num]) ;
+		mote_set_parameters(bandTable[current_band_num], current_band_num) ;
+		set_LED_data(LED_GREEN,&on) ;
+
+		// m16946 - commented
+/*		status = LORAWAN_Join(DEMO_APP_ACTIVATION_TYPE);
 		if (LORAWAN_SUCCESS == (StackRetStatus_t)status)
 		{
 			set_LED_data(LED_GREEN,&on);
 			printf("\nJoin Request Sent\n\r");
 
 		}
-		else
+*/
+/*		else
 		{
 			set_LED_data(LED_AMBER,&on);
 			print_stack_status(status);
 			appTaskState = JOIN_SEND_STATE;
 			appPostTask(DISPLAY_TASK_HANDLER);
-		}
+		}*/
 	}
 	else if(serialBuffer == '2' && joined == true)
 	{
@@ -476,6 +487,10 @@ static void processJoinAndSend(void)
 static void processRunDemoApp(void)
 {
 	uint8_t num = serialBuffer - '0';
+
+// m16946 - store the current band index
+current_band_num = num ;
+	
 	if(num == sizeof(bandTable)-1)
 	{
 		NVIC_SystemReset();
@@ -1312,7 +1327,6 @@ StackRetStatus_t mote_set_parameters(IsmBand_t ismBand, const uint16_t index)
         printf("\nUnsupported Device Type\n\r");
         return status;
     }
-
 
     /* Send Join request for Demo application */
     status = LORAWAN_Join(DEMO_APP_ACTIVATION_TYPE);
