@@ -1,5 +1,5 @@
 # ATSAMR34_ECC608A_ACTILITY
-> “Wireless Made Easy!" - Develop with the SAM R34 LoRa SiP and Microchip LoRaWAN stack on Actility join server
+> “Wireless Made Easy!" - Develop with the SAM R34 LoRa SiP and WLR089U0 Module with Microchip LoRaWAN stack on Actility join server
 
 <p>
 <a href="https://www.microchip.com/design-centers/security-ics/trust-platform/trust-go/trust-go-lora-secure-authentication-with-join-servers" target="_blank">
@@ -10,7 +10,7 @@
 </p>
 </a>
 
-**This guide will direct you through the process of getting started with developing a Secure LoRa End Device product using Microchip Technology's Pre-provisioned ATECC608A secure element along with Actility Join server.**
+**This guide will direct you through the process of getting started with developing a Secure LoRa End Device product using Microchip Technology's Pre-provisioned ATECC608 secure element along with Actility Join server.**
 
 1. [Material required](#step1)
 2. [Software](#step2)
@@ -33,6 +33,11 @@ Purchase the <a href="https://www.microchip.com/Developmenttools/ProductDetails/
 ![](Doc/ATSAMR34Xpro.png)
 </br>
 
+Purchase the <a href="https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/EV23M25A" target="_blank">WLR089U0 Xplained Pro Evaluation Kit</a>
+</br>
+![](Doc/WLR089U0Xpro.png)
+</br>
+
 Purchase a LoRa(r) Gateway from <a href="https://market.thingpark.com/gateways.html?ship_to=all" target="_blank">ThingPark Market</a>
 </br>
 ![](Doc/Gateways_ThingPark_Market.png)
@@ -45,7 +50,7 @@ Purchase a LoRa(r) Gateway from <a href="https://market.thingpark.com/gateways.h
 https://www.microchip.com/mplab/avr-support/atmel-studio-7
 
 - Open Atmel Studio 7.0 IDE. </br>
-- Then, you need Advanced Software Framework (ASFv3) v3.47.0 release or upper release. </br>
+- Then, you need Advanced Software Framework (ASFv3) v3.49.0 release or upper release. </br>
 Install ASFv3 as an extension to Atmel Studio from the menu: Tools -> Extensions and Updates …
 - Once the installation is complete, you must restart Atmel Studio. </br>
 - Download and install a serial terminal program like Tera Term. </br>
@@ -95,7 +100,7 @@ Make sure the Secure Element is properly seated and the pin 1 is located at the 
 Close the clam shell lid.
 </br>
 
-Attach the CryptoAuthenticationUDFN Socket kit to the SAM R34 Xplained Pro board on the **EXT3 header.**
+Attach the CryptoAuthenticationUDFN Socket kit to the SAM R34 Xplained Pro board on the **EXT3 header.** (same setup is valid for WLR089U0 Xplained Pro as well)
 </br>
 Plug the antenna.
 Attach a USB cable to SAM R34 Xplained Pro board's EDBG micro-B port on the right.</br>
@@ -103,6 +108,7 @@ The USB ports powers the board and enables the user to communicate with the kits
 </br>
 ![](Doc/FullSetup.png)
 
+>  Same setup is valid for WLR089U0 Xplained Pro as well
 
 - Wait for USB driver installation and COM ports mounting. </br>
 - Launch Tera Term program and configure the serial ports mounted with: **115200 bps, 8/N/1**
