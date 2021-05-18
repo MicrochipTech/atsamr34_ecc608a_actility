@@ -64,27 +64,12 @@ Purchase a LoRa(r) Gateway from <a href="https://market.thingpark.com/gateways.h
 
 ## Software <a name="step2"></a>
 
-- Download and install Atmel Studio 7.0 IDE. </br>
-https://www.microchip.com/mplab/avr-support/atmel-studio-7
-
-- Open Atmel Studio 7.0 IDE. </br>
-- Then, you need Advanced Software Framework (ASFv3) v3.49.0 release or upper release. </br>
-Install ASFv3 as an extension to Atmel Studio from the menu: Tools -> Extensions and Updates …
-- Once the installation is complete, you must restart Atmel Studio. </br>
+- Download and install [Microchip Studio 7.0 IDE](https://www.microchip.com/mplab/microchip-studio).
+- Open Microchip Studio 7.0 IDE.
+- From **Tools - > Extensions and updates**, install Advanced Software Framework (ASFv3) v3.49.0 release or upper release.
+- Restart Microchip Studio
 - Download and install a serial terminal program like Tera Term. </br>
 https://osdn.net/projects/ttssh2/releases/
-
-Note: ASFv3 is an MCU software library providing a large collection of embedded software for AVR® and SAM flash MCUs and Wireless devices. ASFv3 is configured by the ASF Wizard in Atmel Studio 7.0 (installed as an extension to Studio). ASFv3 is also available as a standalone (.zip) with the same content as Studio extension (https://www.microchip.com/mplab/avr-support/advanced-software-framework).
-
-Important:
-Until the next Atmel Studio IDE release, you have to manually install the Device Part Pack for developing with SAMR34/R35 on Atmel Studio 7.0 IDE.
-(all products released in between IDE releases of Atmel Studio should be manually added by user to develop applications).
-- Go to Tools -> Device Pack Manager </br>
-- Check for Updates </br>
-- Search for SAMR34 and click install </br>
-- Repeat the same for SAMR35 </br>
-- Restart Atmel Studio 7.0 IDE </br>
-
 
 ## Hardware setup <a name="step3"></a>
 
@@ -133,7 +118,7 @@ The USB ports powers the board and enables the user to communicate with the kits
 
 ## Sample Application Code <a name="step4"></a>
 
-Open the "APPS_ENDDEVICE_DEMO" project with Atmel Studio 7 IDE</br>
+Open the "APPS_ENDDEVICE_DEMO" project with Microchip Studio 7 IDE</br>
 From the top menu, go to Project -> APPS_ENDDEVICE_DEMO Properties</br>
 From Tool settings, select your board as EDBG debugger with SWD interface
 </br>
