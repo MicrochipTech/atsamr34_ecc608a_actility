@@ -1,4 +1,6 @@
 # ATSAMR34_ECC608A_ACTILITY
+<img src="Doc/IoT-Made-Easy-Logo.png" width=100>
+
 > “Wireless Made Easy!" - Develop with the SAM R34 LoRa SiP and WLR089U0 Module with Microchip LoRaWAN stack on Actility join server
 
 <p>
